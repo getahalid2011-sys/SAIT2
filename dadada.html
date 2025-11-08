@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    background-image: linear-gradient(black, green);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+
+  }
+  @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; } }  
+  .div1 {
+    font-family: sans;
+    height: 150px;
+    background-color: rgb(1, 92, 1);
+    width: 1000px;
+    position: absolute;
+    top: 250px;
+    left: 12.5px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0 rgb(16, 56, 5);
+    animation: fadeIn 2s ease-in-out forwards;
+  
+  }
+  h2 {
+        position: absolute; 
+        left: 10px;
+        bottom: 20px;
+  }
+  h1 {
+    position: absolute;
+    left: 10px;
+  }
+  .eqe {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Можно добавить другие стили, если нужно */
+}
+.div2 {
+    font-family: sans;
+    height: 150px;
+    background-color: rgb(1, 92, 1);
+    width: 1000px;
+    position: absolute;
+    top: 500px;
+    left: 12.5px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0 rgb(16, 56, 5);
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+  .div2text {
+   position: absolute;
+        left: 10px;
+        bottom: 20px;
+  
+   }
+  .div3text {
+    font-family: sans;
+    height: 150px;
+    background-color: rgb(1, 92, 1);
+    width: 1000px;
+    position: absolute;
+    top: 750px;
+    left: 12.5px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0 rgb(16, 56, 5);
+    animation: fadeIn 4s ease-in-out forwards; 
+  }
+  #button1 {
+  transition: font-size 3s, color 2s;
+  box-shadow: 0 5px 0 rgb(13, 85, 13);
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  font-size: 25px;
+}
+    #button1:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+  }
+    </style>
+</head>
+<body id="body1">
+    <h1 class="eqe">ТАК ПОЧЕМУ ЖЕ Я СИГМА</h1>
+    <div class="div1">
+        <h1>Факт 1.Я умнее</h1>
+        <h2 class="az">"Я ответил больше всех вопросов но это не влияет на мой айкью ):"</h2></div>
+    <div class="div2">
+        <h1>Факт 2. я плогламмист(мамкин)</h1>
+        <h2 class="div2text">
+          маленкий флотендал (никто не любит фронтенд)
+        </h2>
+    </div>
+    <div class="div3text">
+      <h1>
+       3. Сигма потомучто родился
+      </h1>
+      <h2>
+        если кто то не согласен то вы просто не понимаете суть жизни<div class="d"></div>
+      </h2>
+    </div>
+    <button id="button1">отспорить</button>
+</body>
+<script> 
+
+const button = document.getElementById('button1');
+const nihuynenado = document.querySelector('nihuynenado')
+  // Используем .onclick для обработки клика
+ 
+       button.onclick = function(event) {
+           event.preventDefault();
+
+          // Удаляем все элементы, кроме кнопки
+          const allElements = document.querySelectorAll('body > *:not(#button1)');
+          allElements.forEach(element => {
+               element.remove();  // Используем .remove() для удаления
+          document.body.style.backgroundImage = 'none'; // Убираем градиент
+          document.body.style.backgroundColor = 'black'; // Заливаем фон черным
+          });
+    event.preventDefault();
+    this.style.background = 'black'
+    this.style.color = 'red'
+    this.style.fontSize = '70px'
+    this.style.blockSize = '80px'
+    this.style.boxShadow = 'none'
+    this.style.position = 'absolute';
+    this.style.left = '40%'
+    this.style.top = '50%'
+    this.style.right = '50%'
+    this.textContent = 'афигел?';
+    nihuynenado.style.color = 'black' 
+    const delay = 3000;
+    
+    setTimeout (() => {
+        window.location.href = 'C:\\Users\\COMP\\Desktop\\sait2\\пранк.html'} , delay)}
+</script>
+</html>

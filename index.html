@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    background-image: linear-gradient(black, green);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .khalid   {
+    font-size: 2em;
+    margin: 20px;
+    opacity: 1;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s; /* через 2 сек исчезает */
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; } }  
+ #growing:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+  }
+  #growing {
+  transition: font-size 3s, color 2s;
+  box-shadow: 0 5px 0 rgb(13, 85, 13);
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  height: 40px;
+}
+  #poop {
+    transition: color 1.3s;
+  }
+    </style>
+</head>
+<body id ='poop'>
+    <p class="khalid">Халид сигма</p>
+    <a href="C:\Users\COMP\Desktop\sait\dadada.html"><button id="growing">Почему?</button></a>
+<script>
+const growing = document.getElementById('growing'); // Получаем элемент
+const poop = document.getElementById('poop')
+const khalid = document.getElementById('khalid')
+
+growing.onclick = function(event) { // Используем .onclick для обработки клика
+    event.preventDefault();
+    this.style.background = 'black'
+    this.style.color = 'red'
+    this.style.fontSize = '70px'
+    this.style.blockSize = '80px'
+    poop.style.background = 'black'
+    this.style.boxShadow = 'none'
+    const delay = 3000;
+    
+    setTimeout (() => {
+        window.location.href = 'C:\\Users\\COMP\\Desktop\\sait2\\dadada.html'} , delay)
+    }   
+</script>
+</body>
+</html>
+
+
+
+
+
+
